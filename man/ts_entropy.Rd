@@ -19,7 +19,7 @@ ts_entropy(.data, id, total, newVar, return = c("index", "tibble"), ...)
 When \code{tibble}, a table will be returned with entropy values per feature
 appended as a column.}
 
-\item{...}{An unquoted list of variable names containing individual group population counts.}
+\item{...}{An quoted list of variable names containing individual group population counts.}
 }
 \description{
 Entropy Index

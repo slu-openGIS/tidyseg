@@ -16,7 +16,7 @@ ts_entropy <- function(.data, id, total, newVar, return = c("index", "tibble"), 
   paramList <- as.list(match.call())
 
   # To prevent NOTE from R CMD check 'no visible binding for global variable'
-  # popAB_dissim = popA_prop = popB_prop = NULL
+  . = funs = tp = NULL
 
   # check for missing parameters
   if (missing(id)) {
