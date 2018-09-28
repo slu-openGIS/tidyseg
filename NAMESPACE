@@ -2,6 +2,7 @@
 
 export(ts_dissim)
 importFrom(dplyr,"%>%")
+importFrom(dplyr,as_tibble)
 importFrom(dplyr,mutate)
 importFrom(dplyr,rename)
 importFrom(dplyr,select)

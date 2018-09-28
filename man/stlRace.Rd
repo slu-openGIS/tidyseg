@@ -14,6 +14,16 @@
    \item{white_m}{white population count, margin of error}
    \item{black}{black population count, estimate}
    \item{black_m}{black population count, margin of error}
+   \item{aian}{american indiant and alaskan native population count, estimate}
+   \item{aian_m}{american indiant and alaskan native population count, margin of error}
+   \item{asian}{asian population count, estimate}
+   \item{asian_m}{asian population count, margin of error}
+   \item{nhpi}{native hawaiian and pacific islander population count, estimate}
+   \item{nhpi_m}{native hawaiian and pacific islander population count, margin of error}
+   \item{otherRace}{other race population count, estimate}
+   \item{otherRace_m}{other race population count, margin of error}
+   \item{twoRace}{two or more races population count, estimate}
+   \item{twoRace_m}{two or more races population count, margin of error}
 }}
 \source{
 \code{tidycensus}

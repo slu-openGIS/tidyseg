@@ -13,6 +13,8 @@ ts_dissim(.data, popA, popB, dissim, return = c("index", "tibble"))
 
 \item{popB}{Column name of group B population count per feature}
 
+\item{dissim}{If \code{return = "tibble"}, this argument is used to provide name of index variable}
+
 \item{return}{Specifies output. When \code{index}, a single value will be returned.
 When \code{tibble}, a table will be returned with dissimilarity values per feature
 appended as a column.}

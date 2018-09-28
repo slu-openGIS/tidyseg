@@ -14,6 +14,7 @@
 #'     a tibble with dissimilarity values per feature.
 #'
 #' @importFrom dplyr %>%
+#' @importFrom dplyr as_tibble
 #' @importFrom dplyr mutate
 #' @importFrom dplyr rename
 #' @importFrom dplyr select
@@ -87,6 +88,12 @@ ts_dissim <- function(.data, popA, popB, dissim, return = c("index", "tibble")){
 
     props %>%
       dplyr::rename(!!dissimQ := popAB_dissim) -> out
+
+    if (class(out)[1] == "data.frame"){
+
+      out <- dplyr::as_tibble(out)
+
+    }
 
   }
 
