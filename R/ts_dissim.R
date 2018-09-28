@@ -5,6 +5,7 @@
 #' @param .data A tbl
 #' @param popA Column name of group A population count per feature
 #' @param popB Column name of group B population count per feature
+#' @param dissim If \code{return = "tibble"}, this argument is used to provide name of index variable
 #' @param return Specifies output. When \code{index}, a single value will be returned.
 #'     When \code{tibble}, a table will be returned with dissimilarity values per feature
 #'     appended as a column.
@@ -30,7 +31,7 @@ ts_dissim <- function(.data, popA, popB, dissim, return = c("index", "tibble")){
   paramList <- as.list(match.call())
 
   # To prevent NOTE from R CMD check 'no visible binding for global variable'
-  # dateTime = totTime = dateTimePOSIX = NULL
+  popAB_dissim = popA_prop = popB_prop = NULL
 
   # check for missing parameters
   if (missing(popA)) {
