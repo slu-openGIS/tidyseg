@@ -13,4 +13,5 @@ Encoding: UTF-8
 LazyData: true
 Imports:
     dplyr,
+    rlang,
     sf
